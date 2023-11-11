@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+
+    <main>
+        <form id="cliente-form">
+            <div class="container">
+
+                <div class="entrada-de-dados">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="entrada-de-dados">
+                    <label for "sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+
+                <div class="entrada-de-dados">
+                    <label for="data-nascimento">Data Nascimento:</label>
+                    <input type="date" name="data-nascimento" id="data-nascimento" required>
+                </div>
+
+                <div class="entrada-de-dados">
+                    <label for="cidade">UF:</label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </div>
+
+                <div class="entrada-de-dados">
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep" id="cep" required>
+                </div>
+
+
+                <div class="entrada-de-dados">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" required>
+                </div>
+
+                <div class="entrada-de-dados">
+                    <label for="numero">Número:</label>
+                    <input type="number" name="numero" id="numero" required>
+                </div>
+
+                <div class="entrada-de-dados btn-incluir">
+                    <input type="button" value="Adicionar Cliente" id="salvar" onclick="salvarCliente()"
+                        class="btn-form">
+                    <a href="Consultar_Cliente.html" input type="button" value="Lista Clientes" id="Listar"
+                        class="btn-form">
+                </div>
+            </div>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <p>Produzido por Geovanna Sousa Novais</p>
+    </footer>
+
+</body>
+
+</html>
