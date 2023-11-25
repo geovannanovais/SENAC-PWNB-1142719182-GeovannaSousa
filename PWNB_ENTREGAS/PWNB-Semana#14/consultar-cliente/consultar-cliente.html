@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultar Cliente</title>
+  <link rel="stylesheet" href="../consultar-cliente/style-consulta.css" />
+  <script src="../consultar-cliente/script-consulta.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Tela de Consulta de Cliente</h1>
+  </header>
+
+  <main>
+    <section>
+      <div class="modal-container">
+        <div class="modal">
+          <form action="" id="update-form">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" />
+
+            <label for="sobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="sobrenome" />
+
+            <div class="entrada-de-dados input-cliente">
+              <label for="uf-cliente">UF:</label>
+              <select name="uf-cliente" id="uf-cliente" required>
+                <option value="ac">AC</option>
+                <option value="al">AL</option>
+                <option value="ap">AP</option>
+                <option value="am">AM</option>
+                <option value="ba">BA</option>
+                <option value="ce">CE</option>
+                <option value="df">DF</option>
+                <option value="es">ES</option>
+                <option value="go">GO</option>
+                <option value="ma">MA</option>
+                <option value="mt">MT</option>
+                <option value="ms">MS</option>
+                <option value="mg">MG</option>
+                <option value="pa">PA</option>
+                <option value="pb">PB</option>
+                <option value="pr">PR</option>
+                <option value="pe">PE</option>
+                <option value="pi">PI</option>
+                <option value="rj">RJ</option>
+                <option value="rn">RN</option>
+                <option value="rs">RS</option>
+                <option value="ro">RO</option>
+                <option value="rr">RR</option>
+                <option value="sc">SC</option>
+                <option value="sp">SP</option>
+                <option value="se">SE</option>
+                <option value="to">TO</option>
+              </select>
+            </div>
+
+            <label for="data-nasc">Data de nascimento:</label>
+            <input type="date" name="data-nasc" id="data-nasc" />
+
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" id="cep" />
+
+            <label for="cidade">Cidade: </label>
+            <input type="text" name="cidade" id="cidade" />
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" />
+
+            <label for="numero">Numero:</label>
+            <input type="number" name="numero" id="numero" />
+
+            <div class="edit-btns">
+              <button id="saveEdit">Salvar</button>
+              <button id="closeEdit">Fechar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section>
+    <div class="clientes-cadastrados">
+    </div>
+  </section>
+
+
+  <div class="edit-btns">
+    <a href="../index.html">
+      <button id="btnVoltar">Voltar</button>
+    </a>
+  </div>
+
+
+  <footer>
+    <p>Geovanna Sousa Novais | ID: 1142719182</p>
+  </footer>
+</body>
+
+</html>
