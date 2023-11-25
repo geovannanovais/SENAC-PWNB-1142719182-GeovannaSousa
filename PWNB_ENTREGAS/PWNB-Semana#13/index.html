@@ -2,75 +2,104 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Clientes</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Clientes</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <header>
+    <h1>Cadastro de Clientes</h1>
+  </header>
 
-    <header>
-        <h1>Cadastro de Clientes</h1>
-    </header>
+  <main>
+    <form id="cliente-form">
+      <div class="container">
+        <div class="entrada-de-dados">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
 
-    <main>
-        <form id="cliente-form">
-            <div class="container">
+        <div class="entrada-de-dados">
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" name="sobrenome" id="sobrenome" required />
+        </div>
 
-                <div class="entrada-de-dados">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
+        <div class="entrada-de-dados input-cliente">
+          <label for="uf-cliente">UF:</label>
+          <select name="uf-cliente" id="uf-cliente" required>
+            <option value="ac">AC</option>
+            <option value="al">AL</option>
+            <option value="ap">AP</option>
+            <option value="am">AM</option>
+            <option value="ba">BA</option>
+            <option value="ce">CE</option>
+            <option value="df">DF</option>
+            <option value="es">ES</option>
+            <option value="go">GO</option>
+            <option value="ma">MA</option>
+            <option value="mt">MT</option>
+            <option value="ms">MS</option>
+            <option value="mg">MG</option>
+            <option value="pa">PA</option>
+            <option value="pb">PB</option>
+            <option value="pr">PR</option>
+            <option value="pe">PE</option>
+            <option value="pi">PI</option>
+            <option value="rj">RJ</option>
+            <option value="rn">RN</option>
+            <option value="rs">RS</option>
+            <option value="ro">RO</option>
+            <option value="rr">RR</option>
+            <option value="sc">SC</option>
+            <option value="sp">SP</option>
+            <option value="se">SE</option>
+            <option value="to">TO</option>
+          </select>
+        </div>
 
-                <div class="entrada-de-dados">
-                    <label for "sobrenome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="sobrenome" required>
-                </div>
+        <div class="entrada-de-dados">
+          <label for="data-nascimento">Data Nascimento:</label>
+          <input type="date" name="data-nascimento" id="data-nascimento" required />
+        </div>
 
-                <div class="entrada-de-dados">
-                    <label for="data-nascimento">Data Nascimento:</label>
-                    <input type="date" name="data-nascimento" id="data-nascimento" required>
-                </div>
+        <div class="entrada-de-dados">
+          <label for="cep">CEP:</label>
+          <input type="text" name="cep" id="cep" required />
+        </div>
 
-                <div class="entrada-de-dados">
-                    <label for="cidade">UF:</label>
-                    <input type="text" name="cidade" id="cidade" required>
-                </div>
+        <div class="entrada-de-dados">
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="cidade" id="cidade" required />
+        </div>
 
-                <div class="entrada-de-dados">
-                    <label for="cep">CEP:</label>
-                    <input type="text" name="cep" id="cep" required>
-                </div>
+        <div class="entrada-de-dados">
+          <label for="endereco">Endereço:</label>
+          <input type="text" name="endereco" id="endereco" required />
+        </div>
 
+        <div class="entrada-de-dados">
+          <label for="numero">Número:</label>
+          <input type="number" name="numero" id="numero" required />
+        </div>
 
-                <div class="entrada-de-dados">
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" name="endereco" id="endereco" required>
-                </div>
+        <div class="entrada-de-dados btn-incluir">
+          <input type="button" value="Salvar" id="salvar" onclick="salvarCliente()" class="btn-form" />
+          <input type="button" value="Limpar" id="limpar" onclick="limparCampos()" class="btn-form" />
 
-                <div class="entrada-de-dados">
-                    <label for="numero">Número:</label>
-                    <input type="number" name="numero" id="numero" required>
-                </div>
+          <a href="consultar-cliente/consultar-cliente.html" class="btn-form">
+            Clientes
+          </a>
+        </div>
+      </div>
+    </form>
+  </main>
 
-                <div class="entrada-de-dados btn-incluir">
-                    <input type="button" value="Adicionar Cliente" id="salvar" onclick="salvarCliente()"
-                        class="btn-form">
-                    <a href="Consultar_Cliente.html" input type="button" value="Lista Clientes" id="Listar"
-                        class="btn-form">
-                </div>
-            </div>
-        </form>
-
-
-    </main>
-
-    <footer>
-        <p>Produzido por Geovanna Sousa Novais</p>
-    </footer>
-
+  <footer>
+    <p>Geovanna Sousa Novais | ID: 1142719182</p>
+  </footer>
 </body>
 
 </html>
